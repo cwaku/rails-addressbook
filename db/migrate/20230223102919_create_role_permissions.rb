@@ -1,3 +1,4 @@
+# Creates a new role permissions class.
 class CreateRolePermissions < ActiveRecord::Migration[7.0]
   def change
     create_table :role_permissions do |t|

@@ -1,3 +1,4 @@
+# Creates a new instance of CreatePermissions.
 class CreatePermissions < ActiveRecord::Migration[7.0]
   def change
     create_table :permissions do |t|
