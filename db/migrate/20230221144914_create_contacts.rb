@@ -13,6 +13,6 @@ class CreateContacts < ActiveRecord::Migration[7.0]
 
       t.timestamps
     end
-    change_column_null :contacts, :updated_at, true
+    change_column_default :contacts, :updated_at, from: DateTime.now, to: nil
   end
 end

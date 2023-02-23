@@ -10,7 +10,7 @@ class CreateRegions < ActiveRecord::Migration[7.0]
       t.references :user, null: false, foreign_key: true
 
       t.timestamps
-      change_column_null :regions, :updated_at, true
+      change_column_default :regions, :updated_at, from: DateTime.now, to: nil
     end
   end
 end

@@ -12,6 +12,6 @@ class CreateSuburbs < ActiveRecord::Migration[7.0]
 
       t.timestamps
     end
-    change_column_null :suburbs, :updated_at, true
+    change_column_default :cities, :updated_at, from: DateTime.now, to: nil
   end
 end

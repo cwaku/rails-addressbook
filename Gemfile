@@ -78,5 +78,6 @@ group :test do
 end
 
 gem 'activeadmin'
+gem 'cancancan'
 gem 'devise'
 gem 'simple_form'
